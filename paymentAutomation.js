@@ -159,7 +159,7 @@ const driver = new Builder()
 
         await driver.wait(until.elementLocated(By.css(`.a-popover-wrapper .a-button-input`))).click()
 
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        await new Promise(resolve => setTimeout(resolve, 15000));
 
         // in case the popup appears
         await driver.executeScript(() => {
@@ -227,9 +227,7 @@ const driver = new Builder()
         await new Promise(resolve => setTimeout(resolve, 3500));
 
         await driver.wait(until.elementLocated(By.xpath(`//*[text()="This order has been cancelled."]`)))
- 
-        await driver.quit()
-    } catch (error) {
+     } catch (error) {
         console.error(error);
     } finally {
         await driver.quit();
