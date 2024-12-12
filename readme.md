@@ -10,9 +10,6 @@ To run this automation script, you need the following:
   You can download Node.js from [here](https://nodejs.org/).
   
 - **Chrome** browser installed.
-  
-- **ChromeDriver** installed. Ensure that the version of ChromeDriver matches the version of your Chrome browser.  
-  You can download ChromeDriver from [here](https://sites.google.com/chromium.org/driver/).
 
 ## Dependencies
 
@@ -27,5 +24,7 @@ Follow the steps below to set up the environment and install the necessary depen
    git clone https://github.com/Bharath-Shet1999/Juspay-payment-assignment-web-automation.git
    cd Juspay-payment-assignment-web-automation
 
-2. npm install --force ( Perform this in the terminal of the application)
-3. To Run the application or automation script write , node paymentAutomation.js
+2. **Install dependncies (Perform this in the terminal of the application)**:
+    ```npm install --force
+3. **Run the test script**:
+    ```node paymentAutomation.js
