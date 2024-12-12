@@ -25,7 +25,7 @@ const driver = new Builder()
 
 (async function automatePaymentFlow() {
     try {
-        // Open Amazon or Flipkart
+        // Open Amazon
         await driver.get('https://www.amazon.in');
 
 
@@ -116,7 +116,7 @@ const driver = new Builder()
         let addCardNumber = await driver.wait(until.elementLocated(By.css('[name="addCreditCardNumber"]')), 5000)
 
         console.log('add card number', addCardNumber)
-        await addCardNumber.sendKeys('6082159853000042') // 3700 0000 0000 002
+        await addCardNumber.sendKeys('6082159853000042')
         await new Promise(resolve => setTimeout(resolve, 2500));
 
         // selecting the click operation for expiry date
