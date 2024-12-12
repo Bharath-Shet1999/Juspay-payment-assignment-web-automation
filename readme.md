@@ -25,6 +25,8 @@ Follow the steps below to set up the environment and install the necessary depen
    cd Juspay-payment-assignment-web-automation
 
 2. **Install dependncies (Perform this in the terminal of the application)**:
-    ```npm install --force
+    ```bash
+    npm install --force
 3. **Run the test script**:
-    ```node paymentAutomation.js
+    ```bash
+    node paymentAutomation.js
